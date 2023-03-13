@@ -5,6 +5,11 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body{
+    height: auto;
+    color: #f2b705;
+}
+
 #navbar{
     position: fixed;
     background: linear-gradient(170deg, black, #f21628 120%);
@@ -33,7 +38,7 @@
 #navbar a{
     color: #f2b705;
     font-size: 18px;
-    font-weight: 750;
+    font-weight: 1000;
 }
 
 #websiteLogo{
@@ -97,6 +102,46 @@
     height: 22px;
 }
 
+#mainLogin {
+    padding-top: 300px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: auto auto;
+}
+
+#mainLogin input{
+    margin: 5px 0;
+}
+
+.mainForm{
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+    grid-template-columns: auto auto;
+}
+
+.mainForm h2{
+    grid-column: span 2;
+}
+
+.mainForm input{
+    border: solid #f2b705;
+    border-radius: 5% / 50%;
+}
+
+.mainForm input[type="submit"]{
+    grid-column: span 2;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#registerForm{
+    margin-left: 50px;
+    border-left: dotted 2px #f2b705;
+    padding-left: 50px;  
+}
+
 @media screen and (max-width: 900px){
     #menuToggler{
         display: block;
@@ -141,5 +186,21 @@
     #menuToggler.active span:nth-child(3){
         transform: rotate(45deg);
         bottom: 14px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    #mainLogin{
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    #registerForm{
+        margin-left: 0;
+        margin-top: 25px;
+        border-left: none;
+        border-top: dotted 2px #f2b705;
+        padding-left: 0;
+        padding-top: 25px;
     }
 }

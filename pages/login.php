@@ -12,21 +12,30 @@
     </head>
     <body>
         <?php include '../include/header.html';?>
-        <main>
-            <form action="#" method="POST">
-                <h2>Login</h2>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
+        <main id="mainLogin">
+            <form class="mainForm" id="loginForm" action="#" method="POST">
+                <h2 id="loginTitle">Login</h2>
+                <label for="loginEmail">Email :</label>
+                <input type="email" id="loginEmail">
+                <label for="loginPassword">Password :</label>
+                <input type="password" id="loginPassword">
                 <input type="submit" value="Login">
             </form>
-            <form action="#" method="POST">
-                <h2>Sign In</h2>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="First Name">
-                <input type="date" placeholder="Age">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <input type="submit" value="Sign Up">s
+            <form class="mainForm" id="registerForm" action="#" method="POST">
+                <h2 id="registerTitle">Register</h2>
+                <label for="registerName">Name :</label>
+                <input type="text" id="registerName">
+                <label for="registerFirstName">First Name :</label>
+                <input type="text" id="registerFirstName">
+                <label for="registerBirthDate">Birth Date :</label>
+                <input type="date" id="registerBirthDate">
+                <label for="registerEmail">Email :</label>
+                <input type="email" id="registerEmail">
+                <label for="registerPasswordSet">Password :</label>
+                <input type="password" id="registerPasswordSet">
+                <label for="registerPasswordConfirm">Confirm password :</label>
+                <input type="password" id="registerPasswordConfirm">
+                <input type="submit" value="Register">
             </form>
         </main>
     </body>
