@@ -1,0 +1,35 @@
+*{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: #000;
+}
+.recommandation {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.recommandation h1 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.recommandation img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recommandation h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.recommandation p {
+    margin: 0;
+}
