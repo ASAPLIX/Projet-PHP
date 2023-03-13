@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/303c309394.js" crossorigin="anonymous"></script>
+<script src="../js/header.js"></script>
 <header>
     <nav id="navbar">
         <a href="#"><img src="../image/flixupplus_logo_mini.png" id="websiteLogo"></a>
@@ -7,8 +11,8 @@
             <span> </span>
         </button>
         <span id="menu">
-            <a href="#" id="linkMenu">Home</a>
-            <a href="#">Catalogue</a>
+            <a href="../pages/home.php" id="linkMenu">Home</a>
+            <a href="../pages/catalogue.php">Catalogue</a>
             <form id="searchBar" action>
                 <input type="text" placeholder="Search...">
                 <input id="buttonSubmit" type="submit" value="">
@@ -17,7 +21,8 @@
                 Cart
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <a href="../pages/login.php" id="loginRegister">Log In / Register</a>
+            <a href="../pages/sign.php" id="loginRegister">Log In / Register</a>
+            <a href="../pages/logout.php" id="logout">Log Out</a>
         </span>
     </nav>
 </header>

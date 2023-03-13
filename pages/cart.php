@@ -1,3 +1,16 @@
+<?php
+session_start();
+if (isset($_SESSION['username'])){
+    try{
+        $connexion = new PDO('mysql:host=localhost;dbname=flixupplusdb;charset=utf8', 'root', '');
+    } catch (Exception $error) {
+        die ('Erreur : ' . $error->getMessage());
+    }
+} else {
+    header('Location: sign.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
